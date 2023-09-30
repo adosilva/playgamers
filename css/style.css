@@ -32,13 +32,72 @@ body, ul {
   align-items: center;
   justify-content: space-between;
   background: #e7e7e7;
+  box-shadow: 3px 3px 6px #b1b1b1; /* Sombra Menu */
 }
 #menu {
   display: flex;
   list-style: none;
-  gap: 0.5rem;
+  gap: 0.8rem;
 }
 #btn-mobile {
   display: none;
 }
 /* Fim CSS estilo header */
+
+/* Início estilo carousel */
+#carouselExampleInterval {
+  position: relative;
+  z-index: 10;
+  padding-top: 10px;
+  box-shadow: 3px 3px 6px #a5a5a5; /* Sombra carousel */
+}
+/* Fim estilo carousel */
+
+/* Início estilo Banner Home */
+/* Para aplicar estilos na CLASS > utilize o ponto [ . ] antes do objeto */
+/* Para aplicar estilos no ID > utilize a hashtag [ # ] antes do objeto */
+.section-banner-home {
+  width: 100%;
+  height: 500px;
+  margin-top: 10px;
+  padding: 50px;
+  background-color: #006ccb;
+  box-shadow: 3px 3px 6px #b1b1b1; /* Sombra Banner */
+}
+.section-banner-home img {
+  max-height: 400px;
+  width: 70%;
+  display: block;
+  margin: auto;
+}
+.section-banner-home .texto-banner {
+  margin-top: 30px;
+  font-size: 22px;
+}
+.section-banner-home .texto-banner h1 {
+  font-size: 30px;
+  width: 60%;
+  font-weight: 500;
+  padding-bottom: 20px;
+  color: white;
+}
+.section-banner-home .texto-banner p {
+  font-size: 15px;
+  margin-bottom: 20px;
+  color: white;
+}
+.section-banner-home .texto-banner a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  background-color: #100060;
+  padding: 4px 14px;
+  font-size: 17px;
+  transition: 0.3s; /* Deixando o efeito suave */
+}
+.section-banner-home .texto-banner a:hover {
+  /* color: greenyellow; Cor do Texto */ 
+  /* text-shadow: 2px 2px 4px #ffffff7a; Sombra do Texto */
+  font-size: 18px;
+  font-weight: bold;
+}
+/* Fim estilo Banner Home */
