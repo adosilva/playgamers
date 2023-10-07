@@ -1,29 +1,36 @@
 /* Arquivo da folha de estilos de todo o site */
 /* Início CSS estilo header */
-body, ul {
+body,
+ul {
   margin: 0px;
   padding: 0px;
 }
+
 #menu a {
   color: black;
   text-decoration: none;
   font-family: sans-serif;
   font-size: 15px;
 }
+
 #menu a:hover {
   background: rgba(0, 0, 0, 0.05);
   font-size: 15px;
 }
+
 #logo {
   font-size: 1.5rem;
 }
+
 #logo img {
   height: 60px;
 }
+
 #logo img:hover {
   box-shadow: 2px 2px 4px #cbcbcb;
   transition: 0.3s;
 }
+
 #header {
   box-sizing: border-box;
   height: 70px;
@@ -32,16 +39,20 @@ body, ul {
   align-items: center;
   justify-content: space-between;
   background: #e7e7e7;
-  box-shadow: 3px 3px 6px #b1b1b1; /* Sombra Menu */
+  box-shadow: 3px 3px 6px #b1b1b1;
+  /* Sombra Menu */
 }
+
 #menu {
   display: flex;
   list-style: none;
   gap: 0.8rem;
 }
+
 #btn-mobile {
   display: none;
 }
+
 /* Fim CSS estilo header */
 
 /* Início estilo carousel */
@@ -49,8 +60,10 @@ body, ul {
   position: relative;
   z-index: 10;
   padding-top: 10px;
-  box-shadow: 3px 3px 6px #a5a5a5; /* Sombra carousel */
+  box-shadow: 3px 3px 6px #a5a5a5;
+  /* Sombra carousel */
 }
+
 /* Fim estilo carousel */
 
 /* Início estilo Banner Home */
@@ -62,42 +75,161 @@ body, ul {
   margin-top: 10px;
   padding: 50px;
   background-color: #006ccb;
-  box-shadow: 3px 3px 6px #b1b1b1; /* Sombra Banner */
+  box-shadow: 3px 3px 6px #b1b1b1;
+  /* Sombra Banner */
 }
+
 .section-banner-home img {
   max-height: 400px;
   width: 70%;
   display: block;
   margin: auto;
 }
+
 .section-banner-home .texto-banner {
   margin-top: 30px;
   font-size: 22px;
 }
+
 .section-banner-home .texto-banner h1 {
   font-size: 30px;
-  width: 60%;
+  width: 90%;
+  /* width = Largura */
   font-weight: 500;
+  /* Espessura do Texto */
   padding-bottom: 20px;
+  /* Margem interna > Embaixo */
   color: white;
 }
+
 .section-banner-home .texto-banner p {
   font-size: 15px;
   margin-bottom: 20px;
   color: white;
+  text-align: justify;
 }
+
 .section-banner-home .texto-banner a {
   color: rgb(255, 255, 255);
   text-decoration: none;
   background-color: #100060;
   padding: 4px 14px;
   font-size: 17px;
-  transition: 0.3s; /* Deixando o efeito suave */
+  transition: 0.3s;
+  /* Deixando o efeito suave */
 }
+
 .section-banner-home .texto-banner a:hover {
-  /* color: greenyellow; Cor do Texto */ 
+  /* color: greenyellow; Cor do Texto */
   /* text-shadow: 2px 2px 4px #ffffff7a; Sombra do Texto */
   font-size: 18px;
   font-weight: bold;
 }
+
 /* Fim estilo Banner Home */
+
+/* Início estilo Destaque */
+.destaque h2 {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.destaque p {
+  width: 77%;
+  text-align: center;
+  font-size: 14px;
+  margin: 30px auto;
+}
+
+.destaque figcaption {
+  font-size: 13px;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+.destaque #saiba-mais {
+  justify-content: center;
+  display: flex;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  background: #006ccb;
+  margin: 30px 0px;
+  width: 25%;
+  /* align-items: center; */
+}
+.destaque .col-6 img:hover {
+  box-shadow: 2px 2px 6px #969696;
+  transition: 0.3s;
+}
+
+/* Fim estilo Destaque */
+
+/* Início estilo novidades */
+.novidades .text-body {
+  width: 80%;
+  margin: 70px auto;
+}
+.novidades h2 {
+  color: #000;
+  font-size: 26px;
+  width: 70%;
+}
+.novidades p {
+  color: rgb(0, 0, 0);
+}
+.novidades a {
+  justify-content: center;
+  display: flex;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  background: #006ccb;
+  margin: 30px 0px;
+  width: 35%;
+  /* align-items: center; */
+}
+/* Fim estilo novidades */
+/* Início estilo galeria */
+.galeria {
+  margin: 60px auto 20px;
+  /* Quando tivermos 4 valores no margin = top / right / botton / left > Exemplo: margin: 60px 60px 60px 60px; */
+  /* Quando tivermos 3 valores = top / right and left / botton > Exemplo: margin: 60px auto 60px; */
+  /* Quando tivermos 2 valores = top and botton / right and left > Exemplo: margin: 60px 30px; */
+  /* Quando tivermos 1 valor = top, botton, right and left serão idênticos > Exemplo: margin: 60px; */
+  /* Essa regra se aplica também ao padding. */
+}
+.galeria .container {
+  margin-left: 11%;
+}
+.galeria h2 {
+  text-align: center;
+  font-size: 24px;
+}
+.galeria p {
+  text-align: center;
+  width: 50%;
+  margin: 14px auto 50px;
+}
+.galeria .gallery {
+  width: 30%;
+  margin: 14px auto 50px;
+}
+.galeria .gallery img {
+  width: 80%;
+  height: 80%;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  display: block;
+}
+.galeria .gallery img:hover {
+  -webkit-transform: scale(1.9);
+  transform: scale(1.9);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.22);
+}
+/* Fim estilo galeria */
