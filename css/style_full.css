@@ -7,12 +7,14 @@ ul {
   padding: 0px;
 }
 
-#menu a {
+#menu a:hover {
   font-size: 22px;
-  /* border-bottom-left-radius: 15px; Arredondar canto abaixo e esquerdo */
-  /* border-bottom-right-radius: 15px; Arredondar canto abaixo e direto */
+  border-bottom-left-radius: 15px; /* Arredondar canto abaixo e esquerdo */
+  border-bottom-right-radius: 15px; /* Arredondar canto abaixo e direto */
   /* border-color: #006ccb; */
-  /* border-bottom: 0.1px solid #000000; */
+  border-bottom: 0.1px solid #000000;
+}
+#menu a {
   color: black;
   text-decoration: none;
   /* font-family: sans-serif; */
@@ -22,16 +24,14 @@ ul {
   font-weight: 400;
   transition: 0.3s;
   text-align: center;
-  padding: 0 0.4em 0.2em 0.4em; /* top - rigth - botton - left */
-}
-#menu a:hover {
+  padding: 0 0.4em;
   /* background: rgba(0, 0, 0, 0.05); */
   font-size: 24px;
-  /* border-bottom-left-radius: 15px; */
-  /* border-bottom-right-radius: 15px; */
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
   /* border-color: #006ccb; */
-  border-left: 4px solid #26ff00;
-  box-shadow: 1px 1px 2px #969696;
+  border-bottom: 4px solid #000000;
+  box-shadow: 2px 2px 4px #969696;
 }
 
 #logo {
@@ -416,50 +416,3 @@ ul {
   margin-top: 40px;
 }
 /* Fim estilo Footer (rodape) */
-
-/* Início estilo Vídeos */
-.embed-container {
-  position: relative;
-  padding-bottom: 0;
-  height: auto;
-  max-width: 100%;
-  margin-top: 0;
-  margin-bottom: 30px;
-  padding-top: 80px;
-  padding-left: 10%;
-  padding-right: 10%;
-  display: flex;
-}
-.embed-container p {
-  text-align: center;
-  font-size: 20px;
-}
-.embed-container h2 {
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-}
-.embed-container iframe {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 250px;
-  border-radius: 1em;
-  box-shadow: gray 0.5em 0.5em 0.3em;
-  transition: transform .3s;
-  display: flex;
-}
-.embed-container iframe:hover {
-  flex: 1;
-  z-index: 1;
-  transform: scale(1.2);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.446);
-}
-.embed-container .col-lg-4 {
-  margin-top: 30px;
-}
-.embed-container .col-lg-6 {
-  margin-top: 30px;
-}
-/* Fim estilo Vídeos */

@@ -1,0 +1,12 @@
+div {
+  /* Por exemplo, se definir um tamanho de fonte no elemento <body>, o valor de [ em ] de qualquer elemento-filho dentro de <body> será igual àquele tamanho de fonte. */
+  /* width:200px; box quadrado */
+  /* height:200px;  box quadrado */
+  /* background-image: linear-gradient( parâmetros ); */
+
+  width: 100%;
+  /* Box retangular */
+  height: 8em; /* Box retangular > rem > unidade em é definida como o font-size atual. */
+  background-color: rgb(229, 229, 245);
+  background-image: linear-gradient(90deg, rgba(244, 246, 94, 0.515), rgba(143, 255, 46, 0.549));
+}
