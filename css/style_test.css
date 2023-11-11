@@ -531,17 +531,13 @@ ul {
   width: auto;
   max-height: 300px;
 }
-.card .bg-image {
+.bg-image {
   position: relative;
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
 }
-.card .bg-image img {
-  height: 250px;
-}
-
 .mask {
   position: absolute;
   top: 0;
